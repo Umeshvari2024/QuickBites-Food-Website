@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBites - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html"><i class="bi bi-egg-fried text-warning me-2"></i>QuickBites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Food Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 justify-content-start mt-3 mt-lg-0">
+                    <a href="cart.html" class="text-white fs-5 position-relative me-2"><i class="bi bi-bag-heart"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:0.65rem;">0</span></a>
+                    <div id="auth-wrapper"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="fd-hero py-5 mb-5">
+        <div class="container py-4 text-center text-md-start">
+            <div class="row">
+                <div class="col-lg-6 text-white">
+                    <h1 class="display-4 fw-bold mb-3">Hungry? Order Delicious Food Online!</h1>
+                    <p class="fs-5 mb-4 text-white-50">Get your favorite meals from top professional chefs delivered fresh and hot to your home.</p>
+                    <a href="menu.html" class="btn btn-orange btn-lg fw-bold px-4 py-3">Explore Menu <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="text-center mb-5"><h2 class="fw-bold fs-1">Chef's Special Choices</h2></div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card fd-product-card h-100 border-0 shadow-sm">
+                    <div class="fd-img-container"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Burger"></div>
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between mb-2"><span class="badge bg-light text-dark border">Fast Food</span><span class="text-warning"><i class="bi bi-star-fill"></i> 4.8</span></div>
+                        <h5 class="fw-bold">Classic Cheese Burger</h5>
+                        <p class="text-muted small">Juicy grilled chicken patty with extra cheddar cheese.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4"><h4 class="fw-bold text-orange mb-0">₹149</h4><button class="btn btn-orange-outline px-3 py-2 fw-medium">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card fd-product-card h-100 border-0 shadow-sm">
+                    <div class="fd-img-container"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400" alt="Pizza"></div>
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between mb-2"><span class="badge bg-light text-dark border">Pizza</span><span class="text-warning"><i class="bi bi-star-fill"></i> 4.7</span></div>
+                        <h5 class="fw-bold">Margherita Pizza</h5>
+                        <p class="text-muted small">Authentic Italian crust topped with fresh mozzarella.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4"><h4 class="fw-bold text-orange mb-0">₹299</h4><button class="btn btn-orange-outline px-3 py-2 fw-medium">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mx-auto">
+                <div class="card fd-product-card h-100 border-0 shadow-sm">
+                    <div class="fd-img-container"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400" alt="Biryani"></div>
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between mb-2"><span class="badge bg-light text-dark border">Main Course</span><span class="text-warning"><i class="bi bi-star-fill"></i> 4.9</span></div>
+                        <h5 class="fw-bold">Hyderabadi Biryani</h5>
+                        <p class="text-muted small">Fragrant basmati rice layered with spiced chicken.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4"><h4 class="fw-bold text-orange mb-0">₹249</h4><button class="btn btn-orange-outline px-3 py-2 fw-medium">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="swiggy-footer pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="mb-5">
+                <h5 class="city-grid-title mb-4">Cities with food delivery</h5>
+                <div class="row g-3">
+                    <div class="col-6 col-md-4 col-lg-3"><a href="menu.html" class="btn-city-link">Order food online in Bangalore</a></div>
+                    <div class="col-6 col-md-4 col-lg-3"><a href="menu.html" class="btn-city-link">Order food online in Gurgaon</a></div>
+                    <div class="col-6 col-md-4 col-lg-3"><a href="menu.html" class="btn-city-link">Order food online in Hyderabad</a></div>
+                    <div class="col-6 col-md-4 col-lg-3"><a href="menu.html" class="btn-city-link">Order food online in Delhi</a></div>
+                    <div class="col-6 col-md-4 col-lg-3"><a href="menu.html" class="btn-city-link">Order food online in Mumbai</a></div>
+                    <div class="col-6 col-md-4 col-lg-3"><a href="menu.html" class="btn-city-link">Order food online in Pune</a></div>
+                    <div class="col-6 col-md-4 col-lg-3"><a href="menu.html" class="btn-city-link">Order food online in Kolkata</a></div>
+                    <div class="col-6 col-md-4 col-lg-3"><button class="btn-city-link d-flex justify-content-between align-items-center" type="button"><span>Show More</span> <i class="bi bi-chevron-down small"></i></button></div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="fw-bold mb-3 text-orange"><i class="bi bi-egg-fried me-2"></i>QuickBites</h4>
+                    <p class="small text-muted">&copy; 2026 QuickBites Limited</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="mb-3">Company</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">QuickBites Corporate</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="mb-3">Contact us</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small mb-4">
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                    </ul>
+                    <h6 class="mb-3">Legal</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <h6 class="mb-3">Available in:</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="#">Bangalore</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Pune</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h6 class="mb-3">Social Links</h6>
+                    <div class="d-flex gap-3 fs-5 social-icons">
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="app-download-banner mt-5 pt-4">
+                <div class="row align-items-center justify-content-between g-3 text-center text-md-start">
+                    <div class="col-md-7 col-lg-8"><h5 class="fw-bold mb-0 text-secondary-emphasis">For better experience, download the QuickBites app now</h5></div>
+                    <div class="col-md-5 col-lg-4 d-flex gap-3 justify-content-center justify-content-md-end">
+                        <a href="#" class="store-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a>
+                        <a href="#" class="store-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="filter: invert(1);"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="themeBtn" class="theme-toggle-btn"><i class="bi bi-moon-fill me-1"></i> Mode</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

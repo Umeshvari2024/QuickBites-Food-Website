@@ -1,0 +1,370 @@
+/* =========================
+   ROOT COLORS
+========================= */
+
+:root{
+    --bg-color:#f8f9fb;
+    --card-bg:#ffffff;
+    --text-color:#1f2937;
+    --nav-bg:#ffffff;
+    --nav-text:#111827;
+    --orange-primary:#ff5722;
+    --orange-hover:#e64a19;
+    --border-color:#e5e7eb;
+    --shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode{
+    --bg-color:#0f172a;
+    --card-bg:#1e293b;
+    --text-color:#f8fafc;
+    --nav-bg:#111827;
+    --nav-text:#ffffff;
+    --border-color:#334155;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg-color);
+    color:var(--text-color);
+    font-family:'Segoe UI',sans-serif;
+    transition:0.3s;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:var(--nav-bg)!important;
+    padding:14px 0;
+    border-bottom:1px solid var(--border-color);
+}
+
+.navbar-brand{
+    color:var(--nav-text)!important;
+}
+
+.nav-link{
+    color:var(--nav-text)!important;
+    font-weight:500;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:var(--orange-primary)!important;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.fd-hero{
+    min-height:500px;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1400')
+    center/cover no-repeat;
+    color:white;
+}
+
+.fd-hero h1{
+    font-size:60px;
+    font-weight:800;
+}
+
+.fd-hero p{
+    font-size:18px;
+    margin-top:20px;
+    line-height:1.8;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-orange{
+    background:var(--orange-primary)!important;
+    color:white!important;
+    border:none!important;
+    border-radius:30px!important;
+    padding:12px 30px!important;
+    transition:0.3s;
+}
+
+.btn-orange:hover{
+    background:var(--orange-hover)!important;
+    transform:translateY(-2px);
+}
+
+.btn-orange-outline{
+    border:1px solid var(--orange-primary)!important;
+    color:var(--orange-primary)!important;
+    background:transparent!important;
+    border-radius:30px!important;
+    transition:0.3s;
+}
+
+.btn-orange-outline:hover{
+    background:var(--orange-primary)!important;
+    color:white!important;
+}
+
+/* =========================
+   PRODUCT CARDS
+========================= */
+
+.fd-product-card{
+    background:var(--card-bg)!important;
+    color:var(--text-color)!important;
+    border:none!important;
+    border-radius:20px!important;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:var(--shadow);
+}
+
+.fd-product-card:hover{
+    transform:translateY(-10px);
+}
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.fd-img-container{
+    height:190px;
+    overflow:hidden;
+    background:#f3f4f6;
+}
+
+.fd-img-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.fd-product-card:hover .fd-img-container img{
+    transform:scale(1.08);
+}
+
+/* =========================
+   TEXT COLORS
+========================= */
+
+.text-orange{
+    color:var(--orange-primary)!important;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.swiggy-footer{
+    background:#f3f4f6;
+    padding-top:70px;
+    color:#374151;
+    border-top:1px solid #d1d5db;
+}
+
+body.dark-mode .swiggy-footer{
+    background:#111827;
+    color:#d1d5db;
+    border-top:1px solid #334155;
+}
+
+.city-grid-title{
+    font-size:28px;
+    font-weight:700;
+}
+
+.btn-city-link{
+    width:100%;
+    border:1px solid #d1d5db;
+    padding:12px 16px;
+    border-radius:12px;
+    text-decoration:none;
+    color:#374151;
+    display:block;
+    transition:0.3s;
+    background:white;
+}
+
+.btn-city-link:hover{
+    border-color:var(--orange-primary);
+    color:var(--orange-primary);
+}
+
+body.dark-mode .btn-city-link{
+    background:#1e293b;
+    border-color:#334155;
+    color:#e2e8f0;
+}
+
+.swiggy-footer h6{
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.swiggy-footer ul{
+    padding:0;
+}
+
+.swiggy-footer ul li{
+    list-style:none;
+    margin-bottom:10px;
+}
+
+.swiggy-footer ul li a{
+    text-decoration:none;
+    color:#4b5563;
+    transition:0.3s;
+}
+
+.swiggy-footer ul li a:hover{
+    color:var(--orange-primary);
+}
+
+body.dark-mode .swiggy-footer ul li a{
+    color:#cbd5e1;
+}
+
+.social-icons a{
+    color:#111827!important;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:var(--orange-primary)!important;
+}
+
+body.dark-mode .social-icons a{
+    color:white!important;
+}
+
+/* =========================
+   APP DOWNLOAD
+========================= */
+
+.app-download-banner{
+    border-top:1px solid #d1d5db;
+}
+
+body.dark-mode .app-download-banner{
+    border-top:1px solid #334155;
+}
+
+.store-badge img{
+    height:45px;
+}
+
+/* =========================
+   THEME BUTTON
+========================= */
+
+.theme-toggle-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:999;
+    background:#111827;
+    color:white;
+    border:none;
+    border-radius:40px;
+    padding:12px 22px;
+    box-shadow:var(--shadow);
+    transition:0.3s;
+}
+
+.theme-toggle-btn:hover{
+    transform:scale(1.05);
+}
+
+body.dark-mode .theme-toggle-btn{
+    background:white;
+    color:#111827;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--orange-primary);
+    border-radius:20px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .fd-hero{
+        min-height:350px;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .fd-hero h1{
+        font-size:38px;
+    }
+
+    .fd-hero p{
+        font-size:16px;
+    }
+
+    .navbar-nav{
+        padding-top:15px;
+        gap:10px;
+    }
+
+    .fd-img-container{
+        height:170px;
+    }
+
+    .swiggy-footer{
+        text-align:center;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .store-badge img{
+        height:38px;
+    }
+
+}
