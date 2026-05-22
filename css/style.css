@@ -60,6 +60,7 @@ body{
 
 .navbar-brand{
     color:var(--nav-text)!important;
+    font-weight:700;
 }
 
 .nav-link{
@@ -72,6 +73,23 @@ body{
 .nav-link:hover,
 .nav-link.active{
     color:var(--orange-primary)!important;
+}
+
+/* =========================
+   NAVBAR TOGGLER FIX
+========================= */
+
+.navbar-toggler{
+    border:1px solid var(--orange-primary)!important;
+    padding:6px 10px;
+}
+
+.navbar-toggler-icon{
+    filter:invert(1);
+}
+
+body.dark-mode .navbar-toggler-icon{
+    filter:invert(0);
 }
 
 /* =========================
@@ -155,7 +173,7 @@ body{
 ========================= */
 
 .fd-img-container{
-    height:190px;
+    height:220px;
     overflow:hidden;
     background:#f3f4f6;
 }
@@ -349,10 +367,28 @@ body.dark-mode .theme-toggle-btn{
     .navbar-nav{
         padding-top:15px;
         gap:10px;
+        text-align:center;
     }
 
     .fd-img-container{
-        height:170px;
+        height:180px;
+    }
+
+    .fd-product-card{
+        margin:auto;
+    }
+
+    .card-body{
+        text-align:center;
+    }
+
+    .d-flex{
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .btn-orange-outline{
+        width:100%;
     }
 
     .swiggy-footer{
