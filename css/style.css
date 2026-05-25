@@ -7,7 +7,7 @@
     --card-bg:#ffffff;
     --text-color:#1f2937;
     --nav-bg:#ffffff;
-    --nav-text:#111827;
+    --nav-text:#111827
     --orange-primary:#ff5722;
     --orange-hover:#e64a19;
     --border-color:#e5e7eb;
@@ -160,7 +160,7 @@ body.dark-mode .navbar-toggler-icon{
     border:none!important;
     border-radius:20px!important;
     overflow:hidden;
-    transition:0.4s;
+    transition:0.4s ease;
     box-shadow:var(--shadow);
 }
 
@@ -382,7 +382,7 @@ body.dark-mode .theme-toggle-btn{
         text-align:center;
     }
 
-    .d-flex{
+   .fd-product-card .d-flex{
         flex-wrap:wrap;
         gap:10px;
     }
@@ -403,4 +403,84 @@ body.dark-mode .theme-toggle-btn{
         height:38px;
     }
 
+}
+/* =========================
+   SEARCH + FILTER
+========================= */
+
+#searchInput,
+#categoryFilter{
+    border-radius:14px;
+    border:1px solid var(--border-color);
+    background:var(--card-bg);
+    color:var(--text-color);
+    box-shadow:none!important;
+    transition:0.3s;
+}
+
+#searchInput:focus,
+#categoryFilter:focus{
+    border-color:var(--orange-primary);
+    box-shadow:0 0 0 0.15rem rgba(255,87,34,0.2)!important;
+}
+
+/* =========================
+   CART BADGE ANIMATION
+========================= */
+
+.badge{
+    animation:bounce 0.4s ease;
+}
+
+@keyframes bounce{
+
+    0%{
+        transform:scale(0.7);
+    }
+
+    50%{
+        transform:scale(1.2);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* =========================
+   PRODUCT CARD HOVER
+========================= */
+
+.fd-product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   MOBILE IMPROVEMENTS
+========================= */
+
+@media(max-width:768px){
+
+    .fd-product-card .card-body{
+        padding:1rem!important;
+    }
+
+    .fd-product-card h5{
+        font-size:1rem;
+    }
+
+    .fd-product-card p{
+        font-size:0.85rem;
+    }
+
+    .btn-orange,
+    .btn-orange-outline{
+        width:100%;
+    }
+
+    #searchInput,
+    #categoryFilter{
+        font-size:14px;
+    }
 }
