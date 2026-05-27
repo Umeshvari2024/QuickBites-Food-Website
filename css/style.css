@@ -484,3 +484,51 @@ body.dark-mode .theme-toggle-btn{
         font-size:14px;
     }
 }
+
+/* =========================
+   LOGIN PAGE DESIGN
+========================= */
+
+body {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    min-height: 100vh;
+}
+
+/* Login Card */
+.card {
+    border-radius: 18px;
+}
+
+/* Login Button */
+.btn-coral {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.btn-coral:hover {
+    background: #e63946;
+    transform: translateY(-2px);
+}
+
+/* Theme Button */
+.theme-toggle-btn {
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.theme-toggle-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Input focus */
+.form-control:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 0 0.2rem rgba(255,77,77,0.25);
+}

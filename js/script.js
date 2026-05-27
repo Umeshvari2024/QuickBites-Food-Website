@@ -45,7 +45,7 @@ function checkAuthStatus() {
                         <a class="dropdown-item text-danger fw-bold"
                            href="#"
                            onclick="handleSignOut(event)">
-                           Sign Out
+                            Sign Out
                         </a>
                     </li>
                 </ul>
@@ -119,7 +119,9 @@ function addToCart(product) {
 
     alert(`😋 ${product.name} added to cart!`);
 
-    if (window.location.pathname.endsWith("cart.html")) {
+    // Netlify वर क्लीन URL (उदा. /cart) आणि स्थानिक फाईल्स दोन्हीसाठी सपोर्ट
+    const currentPath = window.location.pathname;
+    if (currentPath.includes("cart") || currentPath.endsWith("cart.html")) {
         renderCartPage();
     }
 }
@@ -411,9 +413,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // CART PAGE
-    if (window.location.pathname.endsWith("cart.html")) {
-
+    // Netlify क्लीन URL डिटेक्ट करण्यासाठीची अचूक पद्धत
+    const currentPath = window.location.pathname;
+    if (currentPath.includes("cart") || currentPath.endsWith("cart.html")) {
         renderCartPage();
     }
 });
